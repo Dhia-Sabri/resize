@@ -13,7 +13,7 @@ public class zadma : MonoBehaviour
     void OnCollisionEnter(Collision zadma)
     {
 
-        if (zadma.collider.tag == "Obstacle")
+        if (zadma.collider.CompareTag("Obstacle"))
         {
 
             ta7rika.enabled = false;
@@ -23,7 +23,7 @@ public class zadma : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "LevelEND")
+        if (other.CompareTag("LevelEND"))
         {
 
             //score.enabled = false;
